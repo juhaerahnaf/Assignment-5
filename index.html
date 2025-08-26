@@ -10,9 +10,34 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- google fonts -->
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="max-w-[1920px] mx-auto">
+        <nav class="flex justify-between px-[60px] py-6 items-center">
+            <div class="flex items-center gap-[10px]">
+                <figure>
+                    <img src="./assets/logo.png" class="w-[50px] h-[50px]" alt="logoimage">
+                </figure>
+                <p class="text-[#006747] hind text-2xl font-extrabold">Emergency <br> Service</p>
+            </div>
+            <div class="nav-buttons flex gap-5">
+                <button class="bg-[#41ff6b1a] p-3 w-[123px] rounded-[50px] text-black font-black inter">0 <span class="ml-2"><i class="fa-solid fa-heart" style="color: #ff0000;"></i></span></button>
+                <div class="text-black font-black bg-[#41ff6b1a] p-3 w-[123px]  flex justify-center inter items-center gap-2 rounded-[50px]">
+                    <p>0</p>
+                    <img src="./assets/coin.png" class="w-6 h-6" alt="coin">
+                </div>
+                <button class="bg-[#00A63E] p-3 w-[123px] text-white font-semibold inter rounded-[50px]">copy</button>
+            </div>
+        </nav>
+    </header>
+    <section class="max-w-[1920px] mx-auto">
+        <div class="px-[60px] py-3 bg-gradient-to-r from-[#013223] from-0% via-[#006747] via-50% to-[#013223] to-100%">
+            <img src="./assets/logo-dark.png" class="w-[92px] h-[92px] mx-auto" alt="">
+            <h1 class="hind text-[40px] text-center py-3 text-white font-bold">Emergency Service Directory</h1>
+            <p class="hind font-semibold text-xl text-white text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+    </section>
 </body>
 </html>
