@@ -26,12 +26,12 @@
                     <p class="text-[#006747] hind text-2xl font-extrabold">Emergency <br />Service</p>
                 </div>
                 <div class="flex gap-5 nav-buttons">
-                    <button class="bg-[#41ff6b1a] p-3 w-[123px] rounded-[50px] text-black font-black inter"><span class="">0</span><i class="ml-2 fa-solid fa-heart" style="color: #ff0000"></i></button>
+                    <button class="bg-[#41ff6b1a] p-3 w-[123px] rounded-[50px] text-black font-black inter"><span id="nav-heart">0</span><i class="ml-2 fa-solid fa-heart" style="color: #ff0000"></i></button>
                     <div class="text-black font-black bg-[#41ff6b1a] p-3 w-[123px] flex justify-center inter items-center gap-2 rounded-[50px]">
-                        <p>0</p>
+                        <p id="nav-coin">100</p>
                         <img src="./assets/coin.png" class="w-6 h-6" alt="coin" />
                     </div>
-                    <button class="bg-[#00A63E] p-3 w-[123px] text-white font-semibold inter rounded-[50px]"><span>0</span> Copy</button>
+                    <button class="bg-[#00A63E] p-3 w-[123px] text-white font-semibold inter rounded-[50px]"><span id="nav-copy">0</span> Copy</button>
                 </div>
             </nav>
         </header>
@@ -59,15 +59,15 @@
                                 <figure class="p-4 bg-[#FFE3E2] rounded-2xl">
                                     <img src="./assets/emergency.png"class="w-8 h-8"alt="emergency">
                                 </figure>
-                                <i class="text-2xl fa-regular fa-heart"></i>
+                                <i class="text-2xl fa-regular fa-heart card-heart" id="card-heart1"></i>
                             </div>
                             <div class="card-content">
-                                <h3 class="text-2xl mt-4 font-bold hind text-[#111111]">National Emergency Number</h3>
+                                <h3 class="text-2xl mt-4 font-bold hind text-[#111111] national">National Emergency Number</h3>
                                 <p class="text-lg text-[#5C5C5C] card-paragraph roboto">National Emergency</p>
                                 <p class="card-number text-[#111111] roboto font-bold text-[32px] mt-6">999</p>
                                 <p class="px-4 py-2 card-category bg-[#F2F2F2] text-[#5C5C5C] inline-block rounded-full text-center mb-6">ALL</p>
                                 <div class="flex gap-2">
-                                    <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
+                                    <button class="copy-card border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
                                     <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@
                                 <figure class="p-4 bg-[#DFEFFF] rounded-2xl">
                                     <img src="./assets/police.png"class="w-8 h-8"alt="Police">
                                 </figure>
-                                <i class="text-2xl fa-regular fa-heart"></i>
+                                <i class="text-2xl fa-regular fa-heart card-heart" id="card-heart2"></i>
                             </div>
                             <div class="card-content">
                                 <h3 class="text-2xl mt-4 font-bold hind text-[#111111]">Police Helpline Number</h3>
@@ -87,7 +87,7 @@
                                 <p class="card-number text-[#111111] roboto font-bold text-[32px] mt-6">999</p>
                                 <p class="px-4 py-2 card-category bg-[#F2F2F2] text-[#5C5C5C] inline-block rounded-full text-center mb-6">Police</p>
                                 <div class="flex gap-2">
-                                    <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
+                                    <button class="copy-card border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
                                     <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@
                                 <figure class="p-4 bg-[#FFE3E2] rounded-2xl">
                                     <img src="./assets/fire-service.png"class="w-8 h-8"alt="fire-service">
                                 </figure>
-                                <i class="text-2xl fa-regular fa-heart"></i>
+                                <i class="text-2xl fa-regular fa-heart card-heart" id="card-heart3"></i>
                             </div>
                             <div class="card-content">
                                 <h3 class="text-2xl mt-4 font-bold hind text-[#111111]">Fire Service Number</h3>
@@ -107,7 +107,7 @@
                                 <p class="card-number text-[#111111] roboto font-bold text-[32px] mt-6">999</p>
                                 <p class="px-4 py-2 card-category bg-[#F2F2F2] text-[#5C5C5C] inline-block rounded-full text-center mb-6">Fire</p>
                                 <div class="flex gap-2">
-                                    <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
+                                    <button class="copy-card border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
                                     <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@
                                 <figure class="p-4 bg-[#FFE3E2] rounded-2xl">
                                     <img src="./assets/ambulance.png"class="w-8 h-8"alt="ambulance">
                                 </figure>
-                                <i class="text-2xl fa-regular fa-heart"></i>
+                                <i class="text-2xl fa-regular fa-heart card-heart" id="card-heart4"></i>
                             </div>
                             <div class="card-content">
                                 <h3 class="text-2xl mt-4 font-bold hind text-[#111111]">Ambulance Service</h3>
@@ -127,7 +127,7 @@
                                 <p class="card-number text-[#111111] roboto font-bold text-[32px] mt-6">1994-999999</p>
                                 <p class="px-4 py-2 card-category bg-[#F2F2F2] text-[#5C5C5C] inline-block rounded-full text-center mb-6">Health</p>
                                 <div class="flex gap-2">
-                                    <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
+                                    <button class="copy-card border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
                                     <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                                 </div>
                             </div>
@@ -139,7 +139,7 @@
                                 <figure class="p-4 bg-[#FFE3E2] rounded-2xl">
                                     <img src="./assets/emergency.png"class="w-8 h-8"alt="emergency">
                                 </figure>
-                                <i class="text-2xl fa-regular fa-heart"></i>
+                                <i class="text-2xl fa-regular fa-heart card-heart" id="card-heart5"></i>
                             </div>
                             <div class="card-content">
                                 <h3 class="text-2xl mt-4 font-bold hind text-[#111111]">Women & Child Helpline</h3>
@@ -147,7 +147,7 @@
                                 <p class="card-number text-[#111111] roboto font-bold text-[32px] mt-6">109</p>
                                 <p class="px-4 py-2 card-category bg-[#F2F2F2] text-[#5C5C5C] inline-block rounded-full text-center mb-6">Help</p>
                                 <div class="flex gap-2">
-                                    <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
+                                    <button class="copy-card border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
                                     <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                                 </div>
                             </div>
@@ -159,7 +159,7 @@
                                 <figure class="p-4 bg-[#FFE3E2] rounded-2xl">
                                     <img src="./assets/emergency.png"class="w-8 h-8"alt="emergency">
                                 </figure>
-                                <i class="text-2xl fa-regular fa-heart"></i>
+                                <i class="text-2xl fa-regular fa-heart card-heart" id="card-heart6"></i>
                             </div>
                             <div class="card-content">
                                 <h3 class="text-2xl mt-4 font-bold hind text-[#111111]">Anti-Corruption Helpline</h3>
@@ -167,7 +167,7 @@
                                 <p class="card-number text-[#111111] roboto font-bold text-[32px] mt-6">106</p>
                                 <p class="px-4 py-2 card-category bg-[#F2F2F2] text-[#5C5C5C] inline-block rounded-full text-center mb-6">Govt.</p>
                                 <div class="flex gap-2">
-                                    <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
+                                    <button class="copy-card border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
                                     <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                                 </div>
                             </div>
@@ -177,9 +177,9 @@
                         <div class="px-10 py-6 bg-white rounded-xl cards w-[400px] ">
                             <div class="flex items-center justify-between card-images">
                                 <figure class="p-4 bg-[#FFE3E2] rounded-2xl">
-                                    <img src="./assets/emergency.png"class="w-8 h-8"alt="Electrycity">
+                                    <img src="./assets/emergency.png"class="w-8 h-8"alt="Electricity">
                                 </figure>
-                                <i class="text-2xl fa-regular fa-heart"></i>
+                                <i class="text-2xl fa-regular fa-heart card-heart" id="card-heart7"></i>
                             </div>
                             <div class="card-content">
                                 <h3 class="text-2xl mt-4 font-bold hind text-[#111111]">Electricity Helpline</h3>
@@ -187,7 +187,7 @@
                                 <p class="card-number text-[#111111] roboto font-bold text-[32px] mt-6">16216</p>
                                 <p class="px-4 py-2 card-category bg-[#F2F2F2] text-[#5C5C5C] inline-block rounded-full text-center mb-6">Electricity</p>
                                 <div class="flex gap-2">
-                                    <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
+                                    <button class="copy-card border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
                                     <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                                 </div>
                             </div>
@@ -199,7 +199,7 @@
                                 <figure class="p-4 bg-[#FFE3E2] rounded-2xl">
                                     <img src="./assets/brac.png"class="w-8 h-8"alt="Brac">
                                 </figure>
-                                <i class="text-2xl fa-regular fa-heart"></i>
+                                <i class="text-2xl fa-regular fa-heart card-heart" id="card-heart8"></i>
                             </div>
                             <div class="card-content">
                                 <h3 class="text-2xl mt-4 font-bold hind text-[#111111]">Brac Helpline</h3>
@@ -207,7 +207,7 @@
                                 <p class="card-number text-[#111111] roboto font-bold text-[32px] mt-6">16445</p>
                                 <p class="px-4 py-2 card-category bg-[#F2F2F2] text-[#5C5C5C] inline-block rounded-full text-center mb-6">NGO</p>
                                 <div class="flex gap-2">
-                                    <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
+                                    <button class="copy-card border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
                                     <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                                 </div>
                             </div>
@@ -219,7 +219,7 @@
                                 <figure class="p-4 bg-[#FFE3E2] rounded-2xl">
                                     <img src="./assets/Bangladesh-Railway.png"class="w-8 h-8"alt="BR">
                                 </figure>
-                                <i class="text-2xl fa-regular fa-heart"></i>
+                                <i class="text-2xl fa-regular fa-heart card-heart" id="card-heart9"></i>
                             </div>
                             <div class="card-content">
                                 <h3 class="text-2xl mt-4 font-bold hind text-[#111111]">Bangladesh Railway Helpline </h3>
@@ -227,7 +227,7 @@
                                 <p class="card-number text-[#111111] roboto font-bold text-[32px] mt-6">163</p>
                                 <p class="px-4 py-2 card-category bg-[#F2F2F2] text-[#5C5C5C] inline-block rounded-full text-center mb-6">Travel</p>
                                 <div class="flex gap-2">
-                                    <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
+                                    <button class="copy-card border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
                                     <button class="border border-[#D4D6D5] flex w-1/2 px-[60px] py-3 text-[#5C5C5C] roboto rounded-lg gap-2 items-center justify-center hover:bg-[#00A63E] hover:text-white duration-300"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                                 </div>
                             </div>
@@ -237,9 +237,23 @@
                 </div>
         
             <!-- children 2 -->
-            
+                <div class="bg-white w-[400px] border rounded-xl p-7">
+                    <div> <!-- heading div -->
+                        <div class="flex items-center justify-between gap-2 ">
+                            <div class="flex gap-2items-center">
+                                <i class="fa-regular fa-clock text-2xl  text-[#5C5C5C]"></i>
+                                <h2 class="text-[#111111] roboto font-medium text-xl">Call History</h2>
+                            </div>
+                            <button class="bg-[#00A63E] text-white inter font-semibold px-9 py-3 rounded-[50px]">Clear</button>
+                        </div>
+                    </div>
+                    <div class="content-div"> <!-- content div -->
+                        
+                    </div>
+                </div>
             </div>
         </section>
         <!-- card section end -->
+        <script src="./script.js"></script>
     </body>
 </html>
