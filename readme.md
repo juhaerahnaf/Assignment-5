@@ -23,6 +23,14 @@
           document.body.insertBefore(newElement , newDiv)
 
 3. What is **Event Bubbling** and how does it work?
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
+   ans:- Event Bubbling is a javascript where an event happens on a nested element it automatically goes upward through it's parent element to the root of a document.
 
+4. What is **Event Delegation** in JavaScript? Why is it useful?
+   ans:- Event Delegation is a js technique where you use one addEventListener() on the parent element instead attaching all the child elements.
+
+   these are the useful thinks about event delegation:- it requires few listeners less memory uses, works for elements added later and manages events from one place
+
+5. What is the difference between **preventDefault() and stopPropagation()** methods?
+   ans:-
+   preventDefault(): prevents the default action of the browser.
+   stopPropagation(): prevents further propagation of the current element.
