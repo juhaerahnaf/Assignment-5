@@ -18,5 +18,16 @@ for(let copy of cardCopy){
         navCopy.innerText = new_CopyValue + 1;
     })
 }
-
 // copy function end
+function callButton(){
+    const container = document.getElementById('coin-container');    
+        const variable = parseInt(container.innerHTML);
+        if(variable > 0){
+            const containerValue = variable - 20;
+            container.innerHTML =`${containerValue}`;
+        }
+        else{
+            alert('not enough coin');
+        }
+}
+
